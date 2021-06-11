@@ -1,0 +1,312 @@
+@font-face {
+    font-family: "Font1";
+    src: url("./font/font1.ttf");
+}
+@font-face {
+    font-family: "Font2";
+    src: url("./font/font2.ttf");
+}
+@font-face {
+    font-family: "Font3";
+    src: url("./font/font3.ttf");
+}
+html{
+    font-size: 15px;
+}
+body{
+    background-color: black;
+    font-family: "Font1", serif;
+    margin: 0;
+    text-align: center;
+    color: pink;
+}
+
+/*Header*/
+header{
+    color: white;
+    height: 30vh;
+    background-image: url('./immagini/passerella.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-style: oblique;
+}
+#overlay {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 30vh;
+    width: 100%;
+}
+/*Nav*/
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+}
+#logo{
+    font-size: 2rem;
+    color: white;
+    margin-top: 5px;
+}
+#links a{
+    background-color: silver;
+    border-radius: 10px;
+    padding: 15px 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+nav a:hover {
+    color: black;
+}
+
+/*Section*/
+section,footer {
+    font-size: 1rem;
+    line-height: 1;
+}
+#sez{
+    display: flex;
+    justify-content: space-around;
+}
+#sez div{
+    width: calc(80%/3);
+    height: calc(100%/3);
+    padding: 10px;   
+}
+.slot img {
+    width: 350px;
+    height: 400px;
+    border: 1px solid darksalmon;
+}
+section p{
+    color:pink;
+    margin-top: 15px;
+}
+.slot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.5cm;
+}
+.slot p{
+    font-weight:bold;
+    color: darksalmon;
+    border: 1px solid darksalmon;
+    background-color: whitesmoke;
+    padding: 10px 10px;
+    border-radius: 25px;
+    width: 60%;
+}
+#slot2{
+    font-family: "Font2", serif;
+}
+#slot3{
+    font-family: "Font3", serif;
+}
+section h1 ,div h1{
+    font-size: 2rem;
+    color: white;
+    margin: 10px;
+}
+#menu {
+    display: none;
+}
+#menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+/*Footer*/
+footer{
+    background-color: grey;
+    padding: 15px;
+    height: 10vh;
+    background-image: url("./immagini/unict.png");
+    background-size: contain;
+    color: white;
+}
+
+/*Media*/
+@media (max-width: 700px) {
+    #sez {
+      flex-direction: column;
+      align-items: center;
+    }
+}
+@media (max-width: 700px) {
+    #links {
+      display: none;
+    }
+  
+    #menu {
+      display: block;
+    }
+}
+@media (max-width: 700px){
+    #sez div{
+        width: 80%;
+        padding: 10px;
+    }
+}
+@media (max-width: 700px){
+    section h1{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 700px){
+    section p{
+        font-size: 0.75rem;
+    }
+}
+@media (max-width: 700px){
+    .slot img{
+        height: 250px;
+        width: 200px;
+    }
+}
+
+#contenitore, #analisi{
+    display: flex;
+    padding: 0px 10px 10px 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#contenitore div, #analisi div{
+    width: 300px;
+    background-color: white;
+    border: 3px solid darksalmon;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 5px;;
+}
+#contenitore img{
+    width: 250px;
+    height: 100px;    
+    padding: 10px;
+}
+#contenitore h1, #analisi h1{
+    color: grey;
+    font-size: 1rem;
+    padding-bottom: 5px;
+}
+.nascondi{
+    display: none !important;
+}
+#contenitore p, #analisi p{
+    color: black;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#contenitore a{
+    margin: 5px;
+}
+#corpo nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#corpo nav div{
+    margin: 0px 15px;
+}
+#corpo p{
+    margin-bottom: 1px;
+}
+#preferiti, #prodotti, #prenotazioni{
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#preferiti div, #prodotti div, #prenotazioni div{
+    width: 300px;
+    background-color: white;
+    border: 3px solid darksalmon;
+    border-radius: 5px;
+    margin: 15px;
+}
+#preferiti img, #prodotti img{
+    width: 250px;
+    height: 100px;    
+    padding: 10px;
+}
+#preferiti h1, #prodotti h1, #eventi h1, #prenotazioni h1{
+    color: grey;
+    font-size: 1rem;
+    padding-bottom: 5px;
+}
+#preferiti button, #prodotti button, #eventi button, #prenotazioni button{
+    margin: 3px;
+}
+#desc{
+    color:white;
+    margin: 10px;
+}
+#cont{
+    width: 50vw;
+    margin: 10px auto;
+}
+#eventi{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#eventi div{
+    border: 3px solid darksalmon;
+    background-color: white;
+    margin: 3px;
+    border-radius: 10px;
+}
+#eventi p{
+    margin-bottom: 3px;
+}
+form {
+    border: 1px solid darksalmon;
+    border-radius: 5px;
+    
+}
+form label{
+    color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 3px;
+    font-size: 0.8rem;
+}
+section #form_login, section #form_iscrizione{
+    display: flex;
+    justify-content: center;
+}
+form input {
+    margin: 3px 5px;
+    font-style: italic;
+}
+#iscrizione:hover{
+    color: silver;
+}
+#form_login, #form_iscrizione{
+    margin: 5px;
+}
+.form_modello{
+    display: flex;
+    justify-content: center;
+}
+.radio{
+    display: block;
+    margin: 8px 0px;
+}
